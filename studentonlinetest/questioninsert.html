@@ -1,0 +1,226 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Question Page</title>
+		<meta charset="utf-8"><link  rel="icon" type="image/x-icon"  href="http://www.prematix.com/images/logo.png">    
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+		<link rel="stylesheet" href="first.css">
+		<style>
+		.insert_btn{
+			margin:10px;
+			float:right;
+		}
+		.row{
+			margin:0;
+		}
+		
+		body{
+			background-image: url(bgform.jpg);
+			background-position: center center;
+			background-attachment: fixed;
+			background-size: cover;
+			background-color:#e7e7e7;
+		}
+		.header_text{
+				line-height:80px;
+				font-size:20px;
+				font-family:Roboto;
+				font-weight:500;
+				color:#fff;
+			}
+			.material-icons{
+			vertical-align:middle;
+			
+		}
+		.headerbg{
+			background: linear-gradient(-340deg,#4CAF50,#8BC34A)!important;
+		}
+		</style>
+	</head>
+	<body style="">
+		<form id="form_login" method="post" action="questioninsert.php" autocomplete="off">
+		<div class="container-fluid	"> 
+			<div class="row card headerbg " style="margin-left:-15px;margin-right:-15px;">
+				<div class="col-md-6">
+					<p class="header_text">ONLINE TEST FOR APTITUDE AND TECHNICAL </p>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-5 text-right" style="color:#fff;">
+					<a href="adminfirst.php" id="home" style="line-height:80px;color:#fff;outline:none;margin-right:20px;"><i class="material-icons">&#xE88A;</i></a>
+					<div class="mdl-tooltip" data-mdl-for="home">
+						 <strong>Home</strong>
+					</div>
+					<a href="index.php" id="logout"  style="line-height:80px;color:#fff;outline:none;"><i class="material-icons">&#xE8AC;</i></a>
+					
+					<div class="mdl-tooltip" data-mdl-for="logout">
+						<strong>Logout</strong>
+					</div>
+				</div>
+			</div><br/>
+			<ol class="breadcrumb">
+				<li><a href="adminfirst.php">Home</a></li>
+				<li class="active">Question Insert Page</li>        
+			</ol>
+			<div class="row" style="margin-left:100px;margin-right:100px;">
+				<h4 style="text-align:center;line-height:35px;font-weight:500;">Question Insert Page</h4>
+				<div class="col-sm-12" style="background-color:#e7e7e7;padding:10px;border-radius:4px;">
+					
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="row">
+								<div class="col-sm-4">
+									<p>Test Type</p>
+								</div>
+								<div class="col-sm-8">
+									<select class="form-control" name="testtype" required>
+										<option value="APTITUDE">APTITUDE</option>
+										<option value="TECHNICAL">TECHNICAL</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="row">
+								<div class="col-sm-4">
+									<p>Set Type</p>
+								</div>
+								<div class="col-sm-8">
+									<select class="form-control" name="settype" required>
+										<option value="SET_A">SET A</option>
+										<option value="SET_B">SET B</option>
+										<option value="SET_C">SET C</option>
+										<option value="SET_D">SET D</option>
+										<option value="SET_E">SET E</option>
+									</select>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Question Details</p>
+							<textarea type="text" class="form-control" name="questiondet"required></textarea>
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="row">
+								
+									<p>Option A</p>
+								
+									<input type="text" class="form-control" name="optiona" required>
+								
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="row">
+								
+									<p>Option B</p>
+								
+									<input type="text" class="form-control" name="optionb" required>
+								
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="row">
+								
+									<p>Option C</p>
+								
+									<input type="text" class="form-control" name="optionc" >
+								
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="row">
+								
+									<p>Option D</p>
+								
+									<input type="text" class="form-control" name="optiond" >
+								
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="row">
+								
+									<p>Option E</p>
+								
+									<input type="text" class="form-control" name="optione" >
+								
+							</div>
+						</div>
+						<div class="col-sm-4">
+							
+						</div>
+					</div><br>
+					<div class="row">
+						<div class="col-sm-2">
+							<p>Answer</p>
+						</div>
+						<div class="col-sm-4">
+							<select class="form-control" name="answer" required>
+								
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+							
+						</div>
+					</div>
+					
+					<div class="row">
+						
+						<button name="submit" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent insert_btn headerbg">
+						  Submit
+						</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		</form>
+		<script>
+			
+		$(document).ready(function () {
+          history.pushState(null, null, location.href);
+			window.onpopstate = function () {
+				history.go(1);
+			};
+        });
+			
+		$(document).ready(function(){
+				var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+				setInterval(function(){
+					var currentdate = new Date();
+					var temp=currentdate.toString();
+					var date=days[currentdate.getDay()]+" , "+temp.split(" ")[1]+" "+temp.split(" ")[2]+" "+temp.split(" ")[3]+" "+temp.split(" ")[4];
+					
+					$('.currenttime').text(date);
+				},1000);
+			});
+			</script>
+		<div class="container footer">
+			<div class="row">
+				<div class="col-md-4" style="padding: 0;text-align: left;"><p class="currenttime"></p></div>
+				<div class="col-md-4" style="padding: 0;text-align: center;"><p>&copy; All Rights Reserved <a target="_blank" href="http://www.prematix.com">Prematix Software Solution Private Limited</a></p></div>
+				<div class="col-md-4" style="padding: 0;text-align: right;"><p></p></div>
+			
+			</div>
+		</div>
+	</body>
+</html>
